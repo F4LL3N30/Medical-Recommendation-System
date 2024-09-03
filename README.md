@@ -1,1 +1,52 @@
+STEP-1 
+Install the necessary Python libraries by running:
+"pip install pymupdf google-generativeai"
 
+STEP-2
+Set your Google Cloud API key in the script. Replace the placeholder with your actual API key:
+"genai.configure(api_key="YOUR_GOOGLE_CLOUD_API_KEY")"
+
+STEP-3
+Run the Python script to start the analysis:
+"python medical_report_analysis.py"
+
+STEP-4
+Select a PDF File:
+A file dialog will appear. Select the medical report (PDF format) you want to analyze.
+
+STEP-5 
+View the Output:
+The script will extract the text from the PDF, analyze it, and output the recommended doctors based on the provided rules.
+
+Example Output:
+Recommended Doctor(s):
+
+Complete General Physician
+Internal Medicine Specialist
+Nutritionist
+Hematologist
+Cardiologist
+
+Explanation:
+
+This patient is a 23-year-old male. Based on the provided blood report, several values are outside the typical range:
+
+MCH (Mean Corpuscular Hemoglobin): High (36.40 pg)
+MCHC (Mean Corpuscular Hemoglobin Concentration): High (39.06 g/dL)
+RDW-CV (Red Cell Distribution Width): High (16.0 %)
+MPV (Mean Platelet Volume): High (9.8 fL)
+
+These values suggest conditions such as macrocytic anemia. Therefore, the recommendations include specialists who can address these potential concerns.
+
+STEP-6
+Review and Modify the Script:
+You can modify the script to adjust the rules or output format according to your needs.
+
+STEP-7
+Add Your Own Medical Reports:
+Place additional PDF medical reports in the "sample_reports" folder to analyze more documents.
+
+
+
+THANKYOU
+EMJOY YOUR TIME WITH CODE
